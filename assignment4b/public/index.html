@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div id="game">
+    <h1>Trivia Game</h1>
+    <div id="question"></div>
+    <input type="text" id="answer" placeholder="Answer here">
+    <button id="new-question">New Question</button>
+    <button id="submit">Submit</button>
+    <div id="feedback"></div>
+    <div id="score">Score: 0</div>
+  </div>
+  <!-- Service Worker registration for asset caching before trivia starts -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+    }
+  </script>
+  <script src="trivia.js"></script>
+</body>
+</html>
