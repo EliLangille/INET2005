@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLB Team and Player Info API</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">MLB Team and Player Info</h1>
+    
+    <!-- Dropdown to select team -->
+    <div class="form-group">
+      <h3>Select a Team</h3>
+      <select id="team-select" class="form-control">
+        <option value="">Select a team</option>
+        <!-- Teams will be populated dynamically -->
+      </select>
+    </div>
+
+    <div id="team-stats" class="team-stats">
+      <h2>Team Info</h2>
+      <div id="stats-info"></div>
+
+      <!-- Dropdown for selecting a player -->
+      <div class="player-select">
+        <h3>Select a Player</h3>
+        <select id="player-select" class="form-control">
+          <option value="">Select a player</option>
+          <!-- Players will be populated dynamically -->
+        </select>
+      </div>
+    </div>
+
+    <div id="player-info" class="player-info">
+      <!-- Player info will be displayed here -->
+    </div>
+
+    <!-- Logout Button -->
+    <div class="text-center mt-4">
+      <a href="/logout" class="btn btn-outline-light">Log Out</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
