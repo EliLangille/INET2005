@@ -1,4 +1,4 @@
-# MLB Team and Player Info API Project
+# MLB API Project
 
 This project is a web application that provides information about MLB teams and players using the MLB Stats API. It is built with Node.js, Express, and MongoDB, and is containerized using Docker.
 
