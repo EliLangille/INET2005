@@ -41,6 +41,7 @@ Simple: Select a team, then select a player.
 
 Enjoy!
 
-### Cached TeamIDs Database
+### Additional Deliverables
 
-A JSON version of this database can be found in the project folder
+- www/team_ids.json: A JSON version of the MongoDB database
+- Final Project Report.docx: A final report on the project
