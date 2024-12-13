@@ -24,6 +24,7 @@ cd <repo-directory>
 In repo-directory:
 
 ```sh
+cd 'Final Project'
 docker-compose build
 docker-compose up
 ```
